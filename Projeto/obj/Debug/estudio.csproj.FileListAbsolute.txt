@@ -1,0 +1,39 @@
+C:\Users\aluno\Desktop\ProjetoEstudio-master\bin\Debug\estudio.exe.config
+C:\Users\aluno\Desktop\ProjetoEstudio-master\bin\Debug\estudio.exe
+C:\Users\aluno\Desktop\ProjetoEstudio-master\bin\Debug\estudio.pdb
+C:\Users\aluno\Desktop\ProjetoEstudio-master\bin\Debug\MySql.Data.dll
+C:\Users\aluno\Desktop\ProjetoEstudio-master\bin\Debug\Google.Protobuf.dll
+C:\Users\aluno\Desktop\ProjetoEstudio-master\bin\Debug\Renci.SshNet.dll
+C:\Users\aluno\Desktop\ProjetoEstudio-master\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\aluno\Desktop\ProjetoEstudio-master\bin\Debug\MySql.Data.xml
+C:\Users\aluno\Desktop\ProjetoEstudio-master\obj\Debug\estudio.csproj.AssemblyReference.cache
+C:\Users\aluno\Desktop\ProjetoEstudio-master\obj\Debug\estudio.estudio.resources
+C:\Users\aluno\Desktop\ProjetoEstudio-master\obj\Debug\estudio.Form2.resources
+C:\Users\aluno\Desktop\ProjetoEstudio-master\obj\Debug\estudio.Form3.resources
+C:\Users\aluno\Desktop\ProjetoEstudio-master\obj\Debug\estudio.Properties.Resources.resources
+C:\Users\aluno\Desktop\ProjetoEstudio-master\obj\Debug\estudio.csproj.GenerateResource.cache
+C:\Users\aluno\Desktop\ProjetoEstudio-master\obj\Debug\estudio.csproj.CoreCompileInputs.cache
+C:\Users\aluno\Desktop\ProjetoEstudio-master\obj\Debug\estudio.csproj.CopyComplete
+C:\Users\aluno\Desktop\ProjetoEstudio-master\obj\Debug\estudio.exe
+C:\Users\aluno\Desktop\ProjetoEstudio-master\obj\Debug\estudio.pdb
+C:\Users\aluno\Desktop\ProjetoEstudio-master\obj\Debug\estudio.Form4.resources
+C:\Users\Gabri\OneDrive\Área de Trabalho\Projeto Estudio\ProjetoEstudio-master\bin\Debug\estudio.exe.config
+C:\Users\Gabri\OneDrive\Área de Trabalho\Projeto Estudio\ProjetoEstudio-master\bin\Debug\estudio.exe
+C:\Users\Gabri\OneDrive\Área de Trabalho\Projeto Estudio\ProjetoEstudio-master\bin\Debug\estudio.pdb
+C:\Users\Gabri\OneDrive\Área de Trabalho\Projeto Estudio\ProjetoEstudio-master\bin\Debug\MySql.Data.dll
+C:\Users\Gabri\OneDrive\Área de Trabalho\Projeto Estudio\ProjetoEstudio-master\bin\Debug\Google.Protobuf.dll
+C:\Users\Gabri\OneDrive\Área de Trabalho\Projeto Estudio\ProjetoEstudio-master\bin\Debug\Renci.SshNet.dll
+C:\Users\Gabri\OneDrive\Área de Trabalho\Projeto Estudio\ProjetoEstudio-master\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Gabri\OneDrive\Área de Trabalho\Projeto Estudio\ProjetoEstudio-master\bin\Debug\MySql.Data.xml
+C:\Users\Gabri\OneDrive\Área de Trabalho\Projeto Estudio\ProjetoEstudio-master\obj\Debug\estudio.csproj.AssemblyReference.cache
+C:\Users\Gabri\OneDrive\Área de Trabalho\Projeto Estudio\ProjetoEstudio-master\obj\Debug\estudio.csproj.SuggestedBindingRedirects.cache
+C:\Users\Gabri\OneDrive\Área de Trabalho\Projeto Estudio\ProjetoEstudio-master\obj\Debug\estudio.estudio.resources
+C:\Users\Gabri\OneDrive\Área de Trabalho\Projeto Estudio\ProjetoEstudio-master\obj\Debug\estudio.Form2.resources
+C:\Users\Gabri\OneDrive\Área de Trabalho\Projeto Estudio\ProjetoEstudio-master\obj\Debug\estudio.Form3.resources
+C:\Users\Gabri\OneDrive\Área de Trabalho\Projeto Estudio\ProjetoEstudio-master\obj\Debug\estudio.Form4.resources
+C:\Users\Gabri\OneDrive\Área de Trabalho\Projeto Estudio\ProjetoEstudio-master\obj\Debug\estudio.Properties.Resources.resources
+C:\Users\Gabri\OneDrive\Área de Trabalho\Projeto Estudio\ProjetoEstudio-master\obj\Debug\estudio.csproj.GenerateResource.cache
+C:\Users\Gabri\OneDrive\Área de Trabalho\Projeto Estudio\ProjetoEstudio-master\obj\Debug\estudio.csproj.CoreCompileInputs.cache
+C:\Users\Gabri\OneDrive\Área de Trabalho\Projeto Estudio\ProjetoEstudio-master\obj\Debug\estudio.csproj.CopyComplete
+C:\Users\Gabri\OneDrive\Área de Trabalho\Projeto Estudio\ProjetoEstudio-master\obj\Debug\estudio.exe
+C:\Users\Gabri\OneDrive\Área de Trabalho\Projeto Estudio\ProjetoEstudio-master\obj\Debug\estudio.pdb
