@@ -30,104 +30,106 @@ namespace estudio
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSenha = new System.Windows.Forms.MaskedTextBox();
+            this.comboBoxTipo = new System.Windows.Forms.ComboBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
             this.btnCadasUser = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbTipo = new System.Windows.Forms.Label();
+            this.lbSenha = new System.Windows.Forms.Label();
+            this.lbUsuario = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.maskedTextBox1);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.groupBox1.Controls.Add(this.txtSenha);
+            this.groupBox1.Controls.Add(this.comboBoxTipo);
+            this.groupBox1.Controls.Add(this.txtUsuario);
             this.groupBox1.Controls.Add(this.btnCadasUser);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.lbTipo);
+            this.groupBox1.Controls.Add(this.lbSenha);
+            this.groupBox1.Controls.Add(this.lbUsuario);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(545, 167);
+            this.groupBox1.Size = new System.Drawing.Size(481, 167);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados";
             // 
-            // maskedTextBox1
+            // txtSenha
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(103, 76);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.PasswordChar = '*';
-            this.maskedTextBox1.Size = new System.Drawing.Size(318, 22);
-            this.maskedTextBox1.TabIndex = 7;
+            this.txtSenha.Location = new System.Drawing.Point(103, 76);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
+            this.txtSenha.Size = new System.Drawing.Size(318, 22);
+            this.txtSenha.TabIndex = 7;
             // 
-            // comboBox1
+            // comboBoxTipo
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBoxTipo.FormattingEnabled = true;
+            this.comboBoxTipo.Items.AddRange(new object[] {
             "Admininstrador",
             "Restrito"});
-            this.comboBox1.Location = new System.Drawing.Point(103, 111);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(155, 24);
-            this.comboBox1.TabIndex = 6;
+            this.comboBoxTipo.Location = new System.Drawing.Point(103, 111);
+            this.comboBoxTipo.Name = "comboBoxTipo";
+            this.comboBoxTipo.Size = new System.Drawing.Size(155, 24);
+            this.comboBoxTipo.TabIndex = 6;
             // 
-            // textBox1
+            // txtUsuario
             // 
-            this.textBox1.Location = new System.Drawing.Point(103, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(318, 22);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtUsuario.Location = new System.Drawing.Point(103, 36);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(318, 22);
+            this.txtUsuario.TabIndex = 4;
+            this.txtUsuario.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btnCadasUser
             // 
             this.btnCadasUser.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnCadasUser.Location = new System.Drawing.Point(301, 114);
+            this.btnCadasUser.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnCadasUser.Location = new System.Drawing.Point(274, 114);
             this.btnCadasUser.Name = "btnCadasUser";
-            this.btnCadasUser.Size = new System.Drawing.Size(120, 23);
+            this.btnCadasUser.Size = new System.Drawing.Size(147, 21);
             this.btnCadasUser.TabIndex = 3;
             this.btnCadasUser.Text = "Cadastrar";
             this.btnCadasUser.UseVisualStyleBackColor = false;
             this.btnCadasUser.Click += new System.EventHandler(this.btnCadasUser_Click);
             // 
-            // label3
+            // lbTipo
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(41, 117);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 16);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Tipo:";
+            this.lbTipo.AutoSize = true;
+            this.lbTipo.Location = new System.Drawing.Point(41, 117);
+            this.lbTipo.Name = "lbTipo";
+            this.lbTipo.Size = new System.Drawing.Size(39, 16);
+            this.lbTipo.TabIndex = 2;
+            this.lbTipo.Text = "Tipo:";
             // 
-            // label2
+            // lbSenha
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(38, 76);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Senha:";
+            this.lbSenha.AutoSize = true;
+            this.lbSenha.Location = new System.Drawing.Point(38, 76);
+            this.lbSenha.Name = "lbSenha";
+            this.lbSenha.Size = new System.Drawing.Size(50, 16);
+            this.lbSenha.TabIndex = 1;
+            this.lbSenha.Text = "Senha:";
             // 
-            // label1
+            // lbUsuario
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Usuário:";
+            this.lbUsuario.AutoSize = true;
+            this.lbUsuario.Location = new System.Drawing.Point(38, 36);
+            this.lbUsuario.Name = "lbUsuario";
+            this.lbUsuario.Size = new System.Drawing.Size(58, 16);
+            this.lbUsuario.TabIndex = 0;
+            this.lbUsuario.Text = "Usuário:";
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(569, 199);
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ClientSize = new System.Drawing.Size(504, 205);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form3";
             this.Text = "Cadastrar Usuário";
@@ -141,12 +143,12 @@ namespace estudio
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.MaskedTextBox txtSenha;
+        private System.Windows.Forms.ComboBox comboBoxTipo;
+        private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Button btnCadasUser;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbTipo;
+        private System.Windows.Forms.Label lbSenha;
+        private System.Windows.Forms.Label lbUsuario;
     }
 }

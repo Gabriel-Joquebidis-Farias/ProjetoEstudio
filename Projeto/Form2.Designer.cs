@@ -61,6 +61,7 @@ namespace estudio
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.groupBox1.Controls.Add(this.btnCadastrar);
             this.groupBox1.Controls.Add(this.txtEmail);
             this.groupBox1.Controls.Add(this.txtTelefone);
@@ -87,7 +88,7 @@ namespace estudio
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(739, 329);
+            this.groupBox1.Size = new System.Drawing.Size(739, 347);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados Cadastrais";
@@ -95,10 +96,11 @@ namespace estudio
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.BackColor = System.Drawing.SystemColors.Control;
-            this.btnCadastrar.Location = new System.Drawing.Point(270, 297);
+            this.btnCadastrar.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnCadastrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCadastrar.Location = new System.Drawing.Point(23, 297);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(222, 23);
+            this.btnCadastrar.Size = new System.Drawing.Size(680, 32);
             this.btnCadastrar.TabIndex = 22;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
@@ -106,14 +108,14 @@ namespace estudio
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(519, 238);
+            this.txtEmail.Location = new System.Drawing.Point(91, 186);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(216, 22);
             this.txtEmail.TabIndex = 21;
             // 
             // txtTelefone
             // 
-            this.txtTelefone.Location = new System.Drawing.Point(113, 238);
+            this.txtTelefone.Location = new System.Drawing.Point(415, 186);
             this.txtTelefone.Mask = "(99) 99999-9999 ";
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(100, 22);
@@ -121,35 +123,35 @@ namespace estudio
             // 
             // txtNumero
             // 
-            this.txtNumero.Location = new System.Drawing.Point(487, 101);
+            this.txtNumero.Location = new System.Drawing.Point(603, 241);
             this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(43, 22);
+            this.txtNumero.Size = new System.Drawing.Size(100, 22);
             this.txtNumero.TabIndex = 19;
             // 
             // txtComplemento
             // 
-            this.txtComplemento.Location = new System.Drawing.Point(559, 142);
+            this.txtComplemento.Location = new System.Drawing.Point(137, 241);
             this.txtComplemento.Name = "txtComplemento";
-            this.txtComplemento.Size = new System.Drawing.Size(174, 22);
+            this.txtComplemento.Size = new System.Drawing.Size(170, 22);
             this.txtComplemento.TabIndex = 18;
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(520, 190);
+            this.txtEstado.Location = new System.Drawing.Point(415, 244);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(100, 22);
             this.txtEstado.TabIndex = 17;
             // 
             // txtCidade
             // 
-            this.txtCidade.Location = new System.Drawing.Point(287, 194);
+            this.txtCidade.Location = new System.Drawing.Point(603, 186);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(100, 22);
             this.txtCidade.TabIndex = 16;
             // 
             // txtCEP
             // 
-            this.txtCEP.Location = new System.Drawing.Point(80, 191);
+            this.txtCEP.Location = new System.Drawing.Point(254, 30);
             this.txtCEP.Mask = "99.999-999";
             this.txtCEP.Name = "txtCEP";
             this.txtCEP.Size = new System.Drawing.Size(72, 22);
@@ -158,7 +160,7 @@ namespace estudio
             // 
             // txtBairro
             // 
-            this.txtBairro.Location = new System.Drawing.Point(90, 143);
+            this.txtBairro.Location = new System.Drawing.Point(90, 137);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(340, 22);
             this.txtBairro.TabIndex = 14;
@@ -175,7 +177,7 @@ namespace estudio
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(459, 244);
+            this.label11.Location = new System.Drawing.Point(36, 192);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(49, 16);
             this.label11.TabIndex = 12;
@@ -185,7 +187,7 @@ namespace estudio
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(41, 243);
+            this.label10.Location = new System.Drawing.Point(333, 189);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(65, 16);
             this.label10.TabIndex = 11;
@@ -195,7 +197,7 @@ namespace estudio
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(460, 192);
+            this.label9.Location = new System.Drawing.Point(333, 247);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(54, 16);
             this.label9.TabIndex = 10;
@@ -205,7 +207,7 @@ namespace estudio
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(225, 195);
+            this.label8.Location = new System.Drawing.Point(540, 189);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(55, 16);
             this.label8.TabIndex = 9;
@@ -216,7 +218,7 @@ namespace estudio
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(36, 192);
+            this.label7.Location = new System.Drawing.Point(210, 36);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(38, 16);
             this.label7.TabIndex = 8;
@@ -226,7 +228,7 @@ namespace estudio
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(458, 143);
+            this.label6.Location = new System.Drawing.Point(36, 244);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(95, 16);
             this.label6.TabIndex = 7;
@@ -246,7 +248,7 @@ namespace estudio
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(458, 105);
+            this.label4.Location = new System.Drawing.Point(556, 247);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(23, 16);
             this.label4.TabIndex = 5;
@@ -301,6 +303,7 @@ namespace estudio
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox1.Location = new System.Drawing.Point(757, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(216, 276);
@@ -310,8 +313,9 @@ namespace estudio
             // 
             // btnFoto
             // 
-            this.btnFoto.BackColor = System.Drawing.SystemColors.Control;
+            this.btnFoto.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnFoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFoto.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnFoto.Location = new System.Drawing.Point(757, 309);
             this.btnFoto.Name = "btnFoto";
             this.btnFoto.Size = new System.Drawing.Size(216, 32);
@@ -324,7 +328,7 @@ namespace estudio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(978, 424);
             this.Controls.Add(this.btnFoto);
             this.Controls.Add(this.pictureBox1);

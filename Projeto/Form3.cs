@@ -25,11 +25,11 @@ namespace estudio
         private void btnCadasUser_Click(object sender, EventArgs e)
         {
             int tipo = 0;
-            if (comboBox1.SelectedIndex == 0)
+            if (comboBoxTipo.SelectedIndex == 0)
                 tipo = 1; 
-            else if (comboBox1.SelectedIndex == 1)
+            else if (comboBoxTipo.SelectedIndex == 1)
                 tipo = 2; 
-            if (DAO_Conexao.CadLogin(textBox1.Text, maskedTextBox1.Text, tipo)) 
+            if (DAO_Conexao.CadLogin(txtUsuario.Text, txtSenha.Text, tipo)) 
                 MessageBox.Show("Cadastro realizado com sucesso");
             else
                 MessageBox.Show("Erro de cadastro");
