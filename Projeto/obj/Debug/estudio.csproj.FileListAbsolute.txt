@@ -37,3 +37,16 @@ C:\Users\Gabri\OneDrive\Área de Trabalho\Projeto Estudio\ProjetoEstudio-master\
 C:\Users\Gabri\OneDrive\Área de Trabalho\Projeto Estudio\ProjetoEstudio-master\obj\Debug\estudio.csproj.CopyComplete
 C:\Users\Gabri\OneDrive\Área de Trabalho\Projeto Estudio\ProjetoEstudio-master\obj\Debug\estudio.exe
 C:\Users\Gabri\OneDrive\Área de Trabalho\Projeto Estudio\ProjetoEstudio-master\obj\Debug\estudio.pdb
+C:\Users\Gabri\Source\Repos\ProjetoEstudio\Projeto\obj\Debug\estudio.csproj.AssemblyReference.cache
+C:\Users\Gabri\Source\Repos\ProjetoEstudio\Projeto\obj\Debug\estudio.csproj.SuggestedBindingRedirects.cache
+C:\Users\Gabri\Source\Repos\ProjetoEstudio\Projeto\obj\Debug\estudio.cadModalidade.resources
+C:\Users\Gabri\Source\Repos\ProjetoEstudio\Projeto\obj\Debug\estudio.ConsultarModalidade.resources
+C:\Users\Gabri\Source\Repos\ProjetoEstudio\Projeto\obj\Debug\estudio.exclModalidade.resources
+C:\Users\Gabri\Source\Repos\ProjetoEstudio\Projeto\obj\Debug\estudio.estudio.resources
+C:\Users\Gabri\Source\Repos\ProjetoEstudio\Projeto\obj\Debug\estudio.Form2.resources
+C:\Users\Gabri\Source\Repos\ProjetoEstudio\Projeto\obj\Debug\estudio.Form3.resources
+C:\Users\Gabri\Source\Repos\ProjetoEstudio\Projeto\obj\Debug\estudio.Properties.Resources.resources
+C:\Users\Gabri\Source\Repos\ProjetoEstudio\Projeto\obj\Debug\estudio.csproj.GenerateResource.cache
+C:\Users\Gabri\Source\Repos\ProjetoEstudio\Projeto\obj\Debug\estudio.csproj.CoreCompileInputs.cache
+C:\Users\Gabri\Source\Repos\ProjetoEstudio\Projeto\obj\Debug\estudio.exe
+C:\Users\Gabri\Source\Repos\ProjetoEstudio\Projeto\obj\Debug\estudio.pdb

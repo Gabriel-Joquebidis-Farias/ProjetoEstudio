@@ -53,7 +53,7 @@ namespace estudio
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(481, 167);
+            this.groupBox1.Size = new System.Drawing.Size(481, 181);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados";
@@ -74,7 +74,7 @@ namespace estudio
             "Restrito"});
             this.comboBoxTipo.Location = new System.Drawing.Point(103, 111);
             this.comboBoxTipo.Name = "comboBoxTipo";
-            this.comboBoxTipo.Size = new System.Drawing.Size(155, 24);
+            this.comboBoxTipo.Size = new System.Drawing.Size(318, 24);
             this.comboBoxTipo.TabIndex = 6;
             // 
             // txtUsuario
@@ -89,9 +89,9 @@ namespace estudio
             // 
             this.btnCadasUser.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnCadasUser.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCadasUser.Location = new System.Drawing.Point(274, 114);
+            this.btnCadasUser.Location = new System.Drawing.Point(118, 146);
             this.btnCadasUser.Name = "btnCadasUser";
-            this.btnCadasUser.Size = new System.Drawing.Size(147, 21);
+            this.btnCadasUser.Size = new System.Drawing.Size(256, 29);
             this.btnCadasUser.TabIndex = 3;
             this.btnCadasUser.Text = "Cadastrar";
             this.btnCadasUser.UseVisualStyleBackColor = false;
@@ -102,7 +102,7 @@ namespace estudio
             this.lbTipo.AutoSize = true;
             this.lbTipo.Location = new System.Drawing.Point(41, 117);
             this.lbTipo.Name = "lbTipo";
-            this.lbTipo.Size = new System.Drawing.Size(39, 16);
+            this.lbTipo.Size = new System.Drawing.Size(38, 16);
             this.lbTipo.TabIndex = 2;
             this.lbTipo.Text = "Tipo:";
             // 
@@ -111,7 +111,7 @@ namespace estudio
             this.lbSenha.AutoSize = true;
             this.lbSenha.Location = new System.Drawing.Point(38, 76);
             this.lbSenha.Name = "lbSenha";
-            this.lbSenha.Size = new System.Drawing.Size(50, 16);
+            this.lbSenha.Size = new System.Drawing.Size(49, 16);
             this.lbSenha.TabIndex = 1;
             this.lbSenha.Text = "Senha:";
             // 
@@ -120,7 +120,7 @@ namespace estudio
             this.lbUsuario.AutoSize = true;
             this.lbUsuario.Location = new System.Drawing.Point(38, 36);
             this.lbUsuario.Name = "lbUsuario";
-            this.lbUsuario.Size = new System.Drawing.Size(58, 16);
+            this.lbUsuario.Size = new System.Drawing.Size(57, 16);
             this.lbUsuario.TabIndex = 0;
             this.lbUsuario.Text = "Usuário:";
             // 

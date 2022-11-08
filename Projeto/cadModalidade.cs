@@ -16,5 +16,18 @@ namespace estudio
         {
             InitializeComponent();
         }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            Modalidade mod = new Modalidade(txtDescri.Text, float.Parse(txtPreco.Text), int.Parse(ttxtQntdAl.Text), int.Parse(txtAulas.Text));
+            if (mod.CadastrarModalidade())
+            {
+                MessageBox.Show("Cadastrado");
+            }
+            else
+            {
+                MessageBox.Show("ERRO");
+            }
+        }
     }
 }

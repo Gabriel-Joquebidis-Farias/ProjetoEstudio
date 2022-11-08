@@ -22,7 +22,7 @@ namespace estudio
         {
 
         }
-        public Modalidade (String descricao)
+        public Modalidade(String descricao)
         {
             this.Descricao = descricao;
         }
@@ -40,7 +40,7 @@ namespace estudio
             try
             {
                 DAO_Conexao.con.Open();
-                MySqlCommand insere = new MySqlCommand("insert to Modalidade (descricao, preco, alunos, aulas) values ("+ Descricao+"','"+Preco+"','"+qtde_alunos+"','"+qtde_aulas+")"+DAO_Conexao.con);
+                MySqlCommand insere = new MySqlCommand("insert to Modalidade (descricao, preco, alunos, aulas) values (" + Descricao + "','" + Preco + "','" + qtde_alunos + "','" + qtde_aulas + ")" + DAO_Conexao.con);
                 insere.ExecuteNonQuery();
                 cad = true;
             }
@@ -60,11 +60,11 @@ namespace estudio
             try
             {
                 DAO_Conexao.con.Open();
-                MySqlCommand insere = new MySqlCommand("delete * into Modalidade where descricao like" + Descricao+";" + DAO_Conexao.con);
+                MySqlCommand insere = new MySqlCommand("delete * into Modalidade where descricao like" + Descricao + ";" + DAO_Conexao.con);
                 insere.ExecuteNonQuery();
                 exc = true;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.ToString());
             }
@@ -83,7 +83,7 @@ namespace estudio
                 MySqlDataReader buscar = insere.ExecuteReader();
                 return buscar;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.ToString());
                 return null;
@@ -100,8 +100,8 @@ namespace estudio
             try
             {
                 DAO_Conexao.con.Open();
-                MySqlCommand atualiza = new MySqlCommand("update into Estudio_Modalidade (descricao, preco, qtdAlunos, qtdAulas) values (" +Descricao + "','" + Preco + "','" + qtde_alunos + "','" + qtde_aulas + ")" + DAO_Conexao.con);
-                //deve ter erro nessa linha de SQL
+                MySqlCommand atualiza = new MySqlCommand("update into Estudio_Modalidade (descricao, preco, qtdAlunos, qtdAulas) values (" + Descricao + "','" + Preco + "','" + qtde_alunos + "','" + qtde_aulas + ")" + DAO_Conexao.con);
+                
                 atualiza.ExecuteNonQuery();
                 cad = true;
             }
@@ -115,5 +115,24 @@ namespace estudio
             }
             return cad;
         }
+        public MySqlDataReader consultarModalidade()
+        {
+            try
+            {
+                DAO_Conexao.con.Open();
+                MySqlCommand busca = new MySqlCommand("SELECT * FROM Estudio_Modalidade WHERE '" + Descricao + "'", DAO_Conexao.con);
+                MySqlDataReader buscar = busca.ExecuteReader();
+                return buscar;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                return null;
+            }
+            finally
+            {
+                DAO_Conexao.con.Close();
+            }
+        }
     }
-}
+ }

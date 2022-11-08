@@ -30,15 +30,15 @@ namespace estudio
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lbDesc = new System.Windows.Forms.Label();
-            this.lbPreco = new System.Windows.Forms.Label();
-            this.lbQntdAl = new System.Windows.Forms.Label();
-            this.lbAulas = new System.Windows.Forms.Label();
-            this.btnCadastrar = new System.Windows.Forms.Button();
-            this.txtDesc = new System.Windows.Forms.TextBox();
-            this.txtPreco = new System.Windows.Forms.TextBox();
-            this.ttxtQntdAl = new System.Windows.Forms.TextBox();
             this.txtAulas = new System.Windows.Forms.TextBox();
+            this.ttxtQntdAl = new System.Windows.Forms.TextBox();
+            this.txtPreco = new System.Windows.Forms.TextBox();
+            this.txtDescri = new System.Windows.Forms.TextBox();
+            this.btnCadastrar = new System.Windows.Forms.Button();
+            this.lbAulas = new System.Windows.Forms.Label();
+            this.lbQntdAl = new System.Windows.Forms.Label();
+            this.lbPreco = new System.Windows.Forms.Label();
+            this.lbDesc = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +48,7 @@ namespace estudio
             this.groupBox1.Controls.Add(this.txtAulas);
             this.groupBox1.Controls.Add(this.ttxtQntdAl);
             this.groupBox1.Controls.Add(this.txtPreco);
-            this.groupBox1.Controls.Add(this.txtDesc);
+            this.groupBox1.Controls.Add(this.txtDescri);
             this.groupBox1.Controls.Add(this.btnCadastrar);
             this.groupBox1.Controls.Add(this.lbAulas);
             this.groupBox1.Controls.Add(this.lbQntdAl);
@@ -61,41 +61,33 @@ namespace estudio
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cadastrar Modalidade";
             // 
-            // lbDesc
+            // txtAulas
             // 
-            this.lbDesc.AutoSize = true;
-            this.lbDesc.Location = new System.Drawing.Point(35, 79);
-            this.lbDesc.Name = "lbDesc";
-            this.lbDesc.Size = new System.Drawing.Size(58, 13);
-            this.lbDesc.TabIndex = 0;
-            this.lbDesc.Text = "Descriçao:";
+            this.txtAulas.Location = new System.Drawing.Point(124, 195);
+            this.txtAulas.Name = "txtAulas";
+            this.txtAulas.Size = new System.Drawing.Size(302, 20);
+            this.txtAulas.TabIndex = 8;
             // 
-            // lbPreco
+            // ttxtQntdAl
             // 
-            this.lbPreco.AutoSize = true;
-            this.lbPreco.Location = new System.Drawing.Point(35, 118);
-            this.lbPreco.Name = "lbPreco";
-            this.lbPreco.Size = new System.Drawing.Size(38, 13);
-            this.lbPreco.TabIndex = 1;
-            this.lbPreco.Text = "Preço:";
+            this.ttxtQntdAl.Location = new System.Drawing.Point(124, 152);
+            this.ttxtQntdAl.Name = "ttxtQntdAl";
+            this.ttxtQntdAl.Size = new System.Drawing.Size(302, 20);
+            this.ttxtQntdAl.TabIndex = 7;
             // 
-            // lbQntdAl
+            // txtPreco
             // 
-            this.lbQntdAl.AutoSize = true;
-            this.lbQntdAl.Location = new System.Drawing.Point(35, 159);
-            this.lbQntdAl.Name = "lbQntdAl";
-            this.lbQntdAl.Size = new System.Drawing.Size(83, 13);
-            this.lbQntdAl.TabIndex = 2;
-            this.lbQntdAl.Text = "Qntd de Alunos:";
+            this.txtPreco.Location = new System.Drawing.Point(102, 118);
+            this.txtPreco.Name = "txtPreco";
+            this.txtPreco.Size = new System.Drawing.Size(324, 20);
+            this.txtPreco.TabIndex = 6;
             // 
-            // lbAulas
+            // txtDescri
             // 
-            this.lbAulas.AutoSize = true;
-            this.lbAulas.Location = new System.Drawing.Point(35, 202);
-            this.lbAulas.Name = "lbAulas";
-            this.lbAulas.Size = new System.Drawing.Size(77, 13);
-            this.lbAulas.TabIndex = 3;
-            this.lbAulas.Text = "Qntd de Aulas:";
+            this.txtDescri.Location = new System.Drawing.Point(102, 79);
+            this.txtDescri.Name = "txtDescri";
+            this.txtDescri.Size = new System.Drawing.Size(324, 20);
+            this.txtDescri.TabIndex = 5;
             // 
             // btnCadastrar
             // 
@@ -107,34 +99,43 @@ namespace estudio
             this.btnCadastrar.TabIndex = 4;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
-            // txtDesc
+            // lbAulas
             // 
-            this.txtDesc.Location = new System.Drawing.Point(102, 79);
-            this.txtDesc.Name = "txtDesc";
-            this.txtDesc.Size = new System.Drawing.Size(324, 20);
-            this.txtDesc.TabIndex = 5;
+            this.lbAulas.AutoSize = true;
+            this.lbAulas.Location = new System.Drawing.Point(35, 202);
+            this.lbAulas.Name = "lbAulas";
+            this.lbAulas.Size = new System.Drawing.Size(77, 13);
+            this.lbAulas.TabIndex = 3;
+            this.lbAulas.Text = "Qntd de Aulas:";
             // 
-            // txtPreco
+            // lbQntdAl
             // 
-            this.txtPreco.Location = new System.Drawing.Point(102, 118);
-            this.txtPreco.Name = "txtPreco";
-            this.txtPreco.Size = new System.Drawing.Size(324, 20);
-            this.txtPreco.TabIndex = 6;
+            this.lbQntdAl.AutoSize = true;
+            this.lbQntdAl.Location = new System.Drawing.Point(35, 159);
+            this.lbQntdAl.Name = "lbQntdAl";
+            this.lbQntdAl.Size = new System.Drawing.Size(83, 13);
+            this.lbQntdAl.TabIndex = 2;
+            this.lbQntdAl.Text = "Qntd de Alunos:";
             // 
-            // ttxtQntdAl
+            // lbPreco
             // 
-            this.ttxtQntdAl.Location = new System.Drawing.Point(124, 152);
-            this.ttxtQntdAl.Name = "ttxtQntdAl";
-            this.ttxtQntdAl.Size = new System.Drawing.Size(302, 20);
-            this.ttxtQntdAl.TabIndex = 7;
+            this.lbPreco.AutoSize = true;
+            this.lbPreco.Location = new System.Drawing.Point(35, 118);
+            this.lbPreco.Name = "lbPreco";
+            this.lbPreco.Size = new System.Drawing.Size(38, 13);
+            this.lbPreco.TabIndex = 1;
+            this.lbPreco.Text = "Preço:";
             // 
-            // txtAulas
+            // lbDesc
             // 
-            this.txtAulas.Location = new System.Drawing.Point(124, 195);
-            this.txtAulas.Name = "txtAulas";
-            this.txtAulas.Size = new System.Drawing.Size(302, 20);
-            this.txtAulas.TabIndex = 8;
+            this.lbDesc.AutoSize = true;
+            this.lbDesc.Location = new System.Drawing.Point(35, 79);
+            this.lbDesc.Name = "lbDesc";
+            this.lbDesc.Size = new System.Drawing.Size(58, 13);
+            this.lbDesc.TabIndex = 0;
+            this.lbDesc.Text = "Descriçao:";
             // 
             // cadModalidade
             // 
@@ -160,7 +161,7 @@ namespace estudio
         private System.Windows.Forms.TextBox txtAulas;
         private System.Windows.Forms.TextBox ttxtQntdAl;
         private System.Windows.Forms.TextBox txtPreco;
-        private System.Windows.Forms.TextBox txtDesc;
+        private System.Windows.Forms.TextBox txtDescri;
         private System.Windows.Forms.Button btnCadastrar;
     }
 }
