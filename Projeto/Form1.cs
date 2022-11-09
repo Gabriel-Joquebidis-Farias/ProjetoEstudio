@@ -73,9 +73,38 @@ namespace estudio
 
         private void excluirAlunoiToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form4 cadExc = new Form4();
-            cadExc.MdiParent = this;
-            cadExc.Show();
+           
+        }
+
+        private void modalidadeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cadastrarModalidadeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cadModalidade cad = new cadModalidade();
+            cad.MdiParent = this;
+            cad.Show();
+        }
+
+        private void excluirModalidadeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            exclModalidade excl = new exclModalidade();
+            excl.MdiParent = this;
+            excl.Show();
+        }
+
+        private void consultarModadlidadeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultarModalidade consulta = new ConsultarModalidade();
+            consulta.MdiParent = this;
+            consulta.Show();
+        }
+
+        private void atualizarModalidadeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
