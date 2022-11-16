@@ -26,10 +26,9 @@ namespace estudio
         {
             this.Descricao = descricao;
         }
-        public Modalidade(string descricao, float preco, int qtde_alunos, int qtde_aulas)
-        {
-            this.Descricao = descricao;
-            this.Preco = preco;
+        public Modalidade(string descricao, float preco, int qtde_alunos, int qtde_aulas) { 
+            Descricao1 = descricao;
+            Preco1 = preco;
             this.qtde_alunos = qtde_alunos;
             this.qtde_aulas = qtde_aulas;
         }
@@ -40,7 +39,7 @@ namespace estudio
             try
             {
                 DAO_Conexao.con.Open();
-                MySqlCommand insere = new MySqlCommand("insert to Modalidade (descricao, preco, alunos, aulas) values (" + Descricao + "','" + Preco + "','" + qtde_alunos + "','" + qtde_aulas + ")" + DAO_Conexao.con);
+                MySqlCommand insere = new MySqlCommand("insert into Modalidade (descricao, preco, Alunos, Aula)"+" values ('" + Descricao + "','" + Preco + "','" + qtde_alunos + "','" + qtde_aulas + "')" ,DAO_Conexao.con);
                 insere.ExecuteNonQuery();
                 cad = true;
             }
@@ -100,7 +99,7 @@ namespace estudio
             try
             {
                 DAO_Conexao.con.Open();
-                MySqlCommand atualiza = new MySqlCommand("update into Estudio_Modalidade (descricao, preco, qtdAlunos, qtdAulas) values (" + Descricao + "','" + Preco + "','" + qtde_alunos + "','" + qtde_aulas + ")" + DAO_Conexao.con);
+                MySqlCommand atualiza = new MySqlCommand("update into Modalidade (descricao, preco, qtdAlunos, qtdAulas) values (" + Descricao + "','" + Preco + "','" + qtde_alunos + "','" + qtde_aulas + ")" + DAO_Conexao.con);
                 
                 atualiza.ExecuteNonQuery();
                 cad = true;
@@ -120,7 +119,7 @@ namespace estudio
             try
             {
                 DAO_Conexao.con.Open();
-                MySqlCommand busca = new MySqlCommand("SELECT * FROM Estudio_Modalidade WHERE '" + Descricao + "'", DAO_Conexao.con);
+                MySqlCommand busca = new MySqlCommand("SELECT * FROM Modalidade WHERE '" + Descricao + "'", DAO_Conexao.con);
                 MySqlDataReader buscar = busca.ExecuteReader();
                 return buscar;
             }

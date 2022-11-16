@@ -34,7 +34,7 @@ namespace estudio
         private void exclModalidade_Load(object sender, EventArgs e)
         {
             DAO_Conexao.con.Open();
-            MySqlCommand selectDesc = new MySqlCommand("Select descricaoModalidade from Estudio_Modalidade where ativa=1", DAO_Conexao.con);
+            MySqlCommand selectDesc = new MySqlCommand("Select descricao from Modalidade where ativa=1", DAO_Conexao.con);
             MySqlDataReader res = selectDesc.ExecuteReader();
             comboBox1.Items.Clear();
             while (res.Read())
