@@ -29,19 +29,26 @@ namespace estudio
             {
                 MessageBox.Show("Erro");
             }
+            comboAtualiza();
         }
 
         private void exclModalidade_Load(object sender, EventArgs e)
         {
+            comboAtualiza();
+        }
+
+        public void comboAtualiza()
+        {
             DAO_Conexao.con.Open();
-            MySqlCommand selectDesc = new MySqlCommand("Select descricao from Modalidade where ativa=1", DAO_Conexao.con);
-            MySqlDataReader res = selectDesc.ExecuteReader();
+            MySqlCommand insere = new MySqlCommand("Select descricao from Modalidade where Ativo=0", DAO_Conexao.con);
+            MySqlDataReader m = insere.ExecuteReader();
             comboBox1.Items.Clear();
-            while (res.Read())
+            while (m.Read())
             {
-                comboBox1.Items.Add(res.GetString("descricao"));
-                comboBox1.Text = res[0].ToString();
+                comboBox1.Items.Add(m.GetString("descricao"));
+                comboBox1.Text = m[0].ToString();
             }
+            m.Close();
             DAO_Conexao.con.Close();
         }
     }

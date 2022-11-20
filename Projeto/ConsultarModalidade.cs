@@ -16,15 +16,6 @@ namespace estudio
         public ConsultarModalidade()
         {
             InitializeComponent();
-            WindowState = FormWindowState.Maximized;
-
-            Modalidade cad = new Modalidade();
-            MySqlDataReader r = cad.consultarModalidade();
-            while (r.Read())
-            {
-                comboBox1.Items.Add(r["descricaoModalidade"].ToString());
-            }
-            DAO_Conexao.con.Close();
         
         }
 
@@ -35,16 +26,31 @@ namespace estudio
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-            Modalidade modalidade = new Modalidade(Convert.ToString(comboBox1.SelectedItem));
-            if (modalidade.excluir())
-                MessageBox.Show("Excluído com sucesso");
-            else
-                MessageBox.Show("Ocorreu um erro!");
+            DAO_Conexao.con.Open();
+            MySqlCommand insere = new MySqlCommand("select * from Modalidade where descricao ='"+ comboBox1.Text +"'", DAO_Conexao.con);
+            MySqlDataReader mod = insere.ExecuteReader();
+            mod.Read();
+            txtAula.Text = mod.GetString("Aula").ToString();
+            txtPreco.Text = mod.GetString("preco").ToString();
+            txtQntdAl.Text = mod.GetString("Alunos").ToString();
+            mod.Close();
+            DAO_Conexao.con.Close();
         }
 
         private void ConsultarModalidade_Load(object sender, EventArgs e)
         {
-
+            DAO_Conexao.con.Open();
+            MySqlCommand insere = new MySqlCommand("Select descricao from Modalidade where Ativo = 0", DAO_Conexao.con);
+            MySqlDataReader m = insere.ExecuteReader();
+            comboBox1.Items.Clear();
+            while (m.Read())
+            {
+                comboBox1.Items.Add(m.GetString("descricao"));
+                comboBox1.Text = m[0].ToString();
+            }
+            m.Close();
+            DAO_Conexao.con.Close();
+            
         }
     }
 }

@@ -50,6 +50,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Aluno.cs" />
+    <Compile Include="AtualizarModalidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AtualizarModalidade.Designer.cs">
+      <DependentUpon>AtualizarModalidade.cs</DependentUpon>
+    </Compile>
     <Compile Include="cadModalidade.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     <Compile Include="Modalidade.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AtualizarModalidade.resx">
+      <DependentUpon>AtualizarModalidade.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="cadModalidade.resx">
       <DependentUpon>cadModalidade.cs</DependentUpon>
     </EmbeddedResource>
