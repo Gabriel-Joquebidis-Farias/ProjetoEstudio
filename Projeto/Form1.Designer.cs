@@ -36,17 +36,17 @@ namespace estudio
             this.cadastrarLoginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modalidadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastrarModalidadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.excluirModalidadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarModadlidadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.atualizarModalidadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnLogar = new System.Windows.Forms.Button();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.txtLogin = new System.Windows.Forms.TextBox();
             this.lbSenha = new System.Windows.Forms.Label();
             this.lbLogin = new System.Windows.Forms.Label();
-            this.modalidadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastrarModalidadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.excluirModalidadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarModadlidadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.atualizarModalidadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -79,95 +79,34 @@ namespace estudio
             // cadastrarAlunoToolStripMenuItem
             // 
             this.cadastrarAlunoToolStripMenuItem.Name = "cadastrarAlunoToolStripMenuItem";
-            this.cadastrarAlunoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cadastrarAlunoToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.cadastrarAlunoToolStripMenuItem.Text = "Cadastrar Aluno";
             this.cadastrarAlunoToolStripMenuItem.Click += new System.EventHandler(this.cadastrarAlunoToolStripMenuItem_Click);
             // 
             // excluirAlunoiToolStripMenuItem
             // 
             this.excluirAlunoiToolStripMenuItem.Name = "excluirAlunoiToolStripMenuItem";
-            this.excluirAlunoiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.excluirAlunoiToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.excluirAlunoiToolStripMenuItem.Text = "Excluir Aluno";
             this.excluirAlunoiToolStripMenuItem.Click += new System.EventHandler(this.excluirAlunoiToolStripMenuItem_Click);
             // 
             // cadastrarLoginToolStripMenuItem
             // 
             this.cadastrarLoginToolStripMenuItem.Name = "cadastrarLoginToolStripMenuItem";
-            this.cadastrarLoginToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cadastrarLoginToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.cadastrarLoginToolStripMenuItem.Text = "Cadastrar Login";
             this.cadastrarLoginToolStripMenuItem.Click += new System.EventHandler(this.cadastrarLoginToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(156, 6);
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.sairToolStripMenuItem.Text = "Sair";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.groupBox1.Controls.Add(this.btnLogar);
-            this.groupBox1.Controls.Add(this.txtSenha);
-            this.groupBox1.Controls.Add(this.txtLogin);
-            this.groupBox1.Controls.Add(this.lbSenha);
-            this.groupBox1.Controls.Add(this.lbLogin);
-            this.groupBox1.Location = new System.Drawing.Point(12, 48);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(378, 259);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Validação";
-            // 
-            // btnLogar
-            // 
-            this.btnLogar.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnLogar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLogar.Location = new System.Drawing.Point(41, 192);
-            this.btnLogar.Name = "btnLogar";
-            this.btnLogar.Size = new System.Drawing.Size(295, 23);
-            this.btnLogar.TabIndex = 4;
-            this.btnLogar.Text = "LOGAR";
-            this.btnLogar.UseVisualStyleBackColor = false;
-            this.btnLogar.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // txtSenha
-            // 
-            this.txtSenha.Location = new System.Drawing.Point(102, 139);
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.PasswordChar = '*';
-            this.txtSenha.Size = new System.Drawing.Size(179, 20);
-            this.txtSenha.TabIndex = 3;
-            this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
-            // 
-            // txtLogin
-            // 
-            this.txtLogin.Location = new System.Drawing.Point(102, 77);
-            this.txtLogin.Name = "txtLogin";
-            this.txtLogin.Size = new System.Drawing.Size(179, 20);
-            this.txtLogin.TabIndex = 2;
-            // 
-            // lbSenha
-            // 
-            this.lbSenha.AutoSize = true;
-            this.lbSenha.Location = new System.Drawing.Point(55, 142);
-            this.lbSenha.Name = "lbSenha";
-            this.lbSenha.Size = new System.Drawing.Size(41, 13);
-            this.lbSenha.TabIndex = 1;
-            this.lbSenha.Text = "Senha:";
-            // 
-            // lbLogin
-            // 
-            this.lbLogin.AutoSize = true;
-            this.lbLogin.Location = new System.Drawing.Point(55, 80);
-            this.lbLogin.Name = "lbLogin";
-            this.lbLogin.Size = new System.Drawing.Size(36, 13);
-            this.lbLogin.TabIndex = 0;
-            this.lbLogin.Text = "Login:";
             // 
             // modalidadeToolStripMenuItem
             // 
@@ -208,6 +147,69 @@ namespace estudio
             this.atualizarModalidadeToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.atualizarModalidadeToolStripMenuItem.Text = "Atualizar Modalidade";
             this.atualizarModalidadeToolStripMenuItem.Click += new System.EventHandler(this.atualizarModalidadeToolStripMenuItem_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.groupBox1.Controls.Add(this.btnLogar);
+            this.groupBox1.Controls.Add(this.txtSenha);
+            this.groupBox1.Controls.Add(this.txtLogin);
+            this.groupBox1.Controls.Add(this.lbSenha);
+            this.groupBox1.Controls.Add(this.lbLogin);
+            this.groupBox1.Location = new System.Drawing.Point(12, 48);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(378, 259);
+            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Validação";
+            // 
+            // btnLogar
+            // 
+            this.btnLogar.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnLogar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnLogar.Location = new System.Drawing.Point(41, 192);
+            this.btnLogar.Name = "btnLogar";
+            this.btnLogar.Size = new System.Drawing.Size(295, 23);
+            this.btnLogar.TabIndex = 4;
+            this.btnLogar.Text = "LOGAR";
+            this.btnLogar.UseVisualStyleBackColor = false;
+            this.btnLogar.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtSenha
+            // 
+            this.txtSenha.Location = new System.Drawing.Point(102, 139);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
+            this.txtSenha.Size = new System.Drawing.Size(179, 20);
+            this.txtSenha.TabIndex = 3;
+            this.txtSenha.Text = "123";
+            this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
+            // 
+            // txtLogin
+            // 
+            this.txtLogin.Location = new System.Drawing.Point(102, 77);
+            this.txtLogin.Name = "txtLogin";
+            this.txtLogin.Size = new System.Drawing.Size(179, 20);
+            this.txtLogin.TabIndex = 2;
+            this.txtLogin.Text = "teste";
+            // 
+            // lbSenha
+            // 
+            this.lbSenha.AutoSize = true;
+            this.lbSenha.Location = new System.Drawing.Point(55, 142);
+            this.lbSenha.Name = "lbSenha";
+            this.lbSenha.Size = new System.Drawing.Size(41, 13);
+            this.lbSenha.TabIndex = 1;
+            this.lbSenha.Text = "Senha:";
+            // 
+            // lbLogin
+            // 
+            this.lbLogin.AutoSize = true;
+            this.lbLogin.Location = new System.Drawing.Point(55, 80);
+            this.lbLogin.Name = "lbLogin";
+            this.lbLogin.Size = new System.Drawing.Size(36, 13);
+            this.lbLogin.TabIndex = 0;
+            this.lbLogin.Text = "Login:";
             // 
             // estudio
             // 
