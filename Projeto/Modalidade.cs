@@ -10,11 +10,11 @@ namespace estudio
     internal class Modalidade
     {
         private String Descricao;
-        private double Preco;
+        private float Preco;
         private int qtde_alunos, qtde_aulas;
 
         public string Descricao1 { get => Descricao; set => Descricao = value; }
-        public double Preco1 { get => Preco; set => Preco = value; }
+        public float Preco1 { get => Preco; set => Preco = value; }
         public int Qtde_alunos { get => qtde_alunos; set => qtde_alunos = value; }
         public int Qtde_aulas { get => qtde_aulas; set => qtde_aulas = value; }
 
@@ -26,7 +26,7 @@ namespace estudio
         {
             this.Descricao = descricao;
         }
-        public Modalidade(string descricao, double preco, int qtde_alunos, int qtde_aulas) { 
+        public Modalidade(string descricao, float preco, int qtde_alunos, int qtde_aulas) { 
             Descricao1 = descricao;
             Preco1 = preco;
             this.qtde_alunos = qtde_alunos;

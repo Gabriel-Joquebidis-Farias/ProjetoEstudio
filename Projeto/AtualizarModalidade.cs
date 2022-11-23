@@ -20,7 +20,7 @@ namespace estudio
 
         private void btnAtualizar_Click(object sender, EventArgs e)
         {
-            Modalidade mod = new Modalidade(comboBox1.SelectedItem.ToString(), Convert.ToDouble(txtPreco.Text), Convert.ToInt32(txtAlunos.Text), Convert.ToInt32(txtAulas.Text));
+            Modalidade mod = new Modalidade(comboBox1.SelectedItem.ToString(), float.Parse(txtPreco.Text), Convert.ToInt32(txtAlunos.Text), Convert.ToInt32(txtAulas.Text));
             if (mod.atualizar())
             {
                 MessageBox.Show("Modalidade atualizada");
@@ -57,24 +57,19 @@ namespace estudio
 
         private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
         {
-            try
+            Modalidade mod = new Modalidade(comboBox1.Text);
+            MySqlDataReader resu = mod.consultarModalidade();
+            while (resu.Read())
             {
-                DAO_Conexao.con.Open();
-                MySqlCommand insere = new MySqlCommand("select * from Modalidade where descricao like '" + comboBox1.Text + "'", DAO_Conexao.con);
-                MySqlDataReader m = insere.ExecuteReader();
-                m.Read();
-                txtAlunos.Text = m.GetString("Alunos").ToString();
-                txtAulas.Text = m.GetString("Aula").ToString();
-                txtPreco.Text = m.GetString("preco").ToString();
+                txtAlunos.Text = resu["qtdAlunos"].ToString();
+                txtAulas.Text = resu["qtdAulas"].ToString();
+                txtPreco.Text = resu["preco"].ToString();
             }
-            catch(MySqlException ex)
-            {
-                Console.WriteLine(ex.ToString());
-            }
-            finally
-            {
-                DAO_Conexao.con.Close();
-            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

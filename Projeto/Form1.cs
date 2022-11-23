@@ -104,7 +104,9 @@ namespace estudio
 
         private void atualizarModalidadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            AtualizarModalidade atualizar = new AtualizarModalidade();
+            atualizar.MdiParent = this; 
+            atualizar.Show();   
         }
     }
 }
