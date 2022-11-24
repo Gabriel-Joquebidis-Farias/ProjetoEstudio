@@ -30,13 +30,13 @@ namespace estudio
         private void InitializeComponent()
         {
             this.groupBoxExcluir = new System.Windows.Forms.GroupBox();
-            this.comboBoxModal = new System.Windows.Forms.ComboBox();
-            this.comboBoxDias = new System.Windows.Forms.ComboBox();
-            this.comboBoxHora = new System.Windows.Forms.ComboBox();
-            this.lbMod = new System.Windows.Forms.Label();
-            this.lbDias = new System.Windows.Forms.Label();
-            this.lbHora = new System.Windows.Forms.Label();
             this.btnExcluir = new System.Windows.Forms.Button();
+            this.lbHora = new System.Windows.Forms.Label();
+            this.lbDias = new System.Windows.Forms.Label();
+            this.lbMod = new System.Windows.Forms.Label();
+            this.comboBoxHora = new System.Windows.Forms.ComboBox();
+            this.comboBoxDias = new System.Windows.Forms.ComboBox();
+            this.comboBoxModal = new System.Windows.Forms.ComboBox();
             this.groupBoxExcluir.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,47 +57,15 @@ namespace estudio
             this.groupBoxExcluir.TabStop = false;
             this.groupBoxExcluir.Text = "Excluir Turma";
             // 
-            // comboBoxModal
+            // btnExcluir
             // 
-            this.comboBoxModal.FormattingEnabled = true;
-            this.comboBoxModal.Location = new System.Drawing.Point(132, 55);
-            this.comboBoxModal.Name = "comboBoxModal";
-            this.comboBoxModal.Size = new System.Drawing.Size(328, 21);
-            this.comboBoxModal.TabIndex = 0;
-            // 
-            // comboBoxDias
-            // 
-            this.comboBoxDias.FormattingEnabled = true;
-            this.comboBoxDias.Location = new System.Drawing.Point(132, 99);
-            this.comboBoxDias.Name = "comboBoxDias";
-            this.comboBoxDias.Size = new System.Drawing.Size(328, 21);
-            this.comboBoxDias.TabIndex = 1;
-            // 
-            // comboBoxHora
-            // 
-            this.comboBoxHora.FormattingEnabled = true;
-            this.comboBoxHora.Location = new System.Drawing.Point(132, 143);
-            this.comboBoxHora.Name = "comboBoxHora";
-            this.comboBoxHora.Size = new System.Drawing.Size(328, 21);
-            this.comboBoxHora.TabIndex = 2;
-            // 
-            // lbMod
-            // 
-            this.lbMod.AutoSize = true;
-            this.lbMod.Location = new System.Drawing.Point(45, 58);
-            this.lbMod.Name = "lbMod";
-            this.lbMod.Size = new System.Drawing.Size(65, 13);
-            this.lbMod.TabIndex = 3;
-            this.lbMod.Text = "Modalidade:";
-            // 
-            // lbDias
-            // 
-            this.lbDias.AutoSize = true;
-            this.lbDias.Location = new System.Drawing.Point(29, 102);
-            this.lbDias.Name = "lbDias";
-            this.lbDias.Size = new System.Drawing.Size(90, 13);
-            this.lbDias.TabIndex = 4;
-            this.lbDias.Text = "Dias Da Semana:";
+            this.btnExcluir.Location = new System.Drawing.Point(32, 201);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(428, 23);
+            this.btnExcluir.TabIndex = 6;
+            this.btnExcluir.Text = "Exluir";
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // lbHora
             // 
@@ -108,14 +76,49 @@ namespace estudio
             this.lbHora.TabIndex = 5;
             this.lbHora.Text = "Hora:";
             // 
-            // btnExcluir
+            // lbDias
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(32, 201);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(428, 23);
-            this.btnExcluir.TabIndex = 6;
-            this.btnExcluir.Text = "Exluir";
-            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.lbDias.AutoSize = true;
+            this.lbDias.Location = new System.Drawing.Point(29, 102);
+            this.lbDias.Name = "lbDias";
+            this.lbDias.Size = new System.Drawing.Size(90, 13);
+            this.lbDias.TabIndex = 4;
+            this.lbDias.Text = "Dias Da Semana:";
+            // 
+            // lbMod
+            // 
+            this.lbMod.AutoSize = true;
+            this.lbMod.Location = new System.Drawing.Point(45, 58);
+            this.lbMod.Name = "lbMod";
+            this.lbMod.Size = new System.Drawing.Size(65, 13);
+            this.lbMod.TabIndex = 3;
+            this.lbMod.Text = "Modalidade:";
+            // 
+            // comboBoxHora
+            // 
+            this.comboBoxHora.FormattingEnabled = true;
+            this.comboBoxHora.Location = new System.Drawing.Point(132, 143);
+            this.comboBoxHora.Name = "comboBoxHora";
+            this.comboBoxHora.Size = new System.Drawing.Size(328, 21);
+            this.comboBoxHora.TabIndex = 2;
+            // 
+            // comboBoxDias
+            // 
+            this.comboBoxDias.FormattingEnabled = true;
+            this.comboBoxDias.Location = new System.Drawing.Point(132, 99);
+            this.comboBoxDias.Name = "comboBoxDias";
+            this.comboBoxDias.Size = new System.Drawing.Size(328, 21);
+            this.comboBoxDias.TabIndex = 1;
+            this.comboBoxDias.SelectedIndexChanged += new System.EventHandler(this.comboBoxDias_SelectedIndexChanged);
+            // 
+            // comboBoxModal
+            // 
+            this.comboBoxModal.FormattingEnabled = true;
+            this.comboBoxModal.Location = new System.Drawing.Point(132, 55);
+            this.comboBoxModal.Name = "comboBoxModal";
+            this.comboBoxModal.Size = new System.Drawing.Size(328, 21);
+            this.comboBoxModal.TabIndex = 0;
+            this.comboBoxModal.SelectedIndexChanged += new System.EventHandler(this.comboBoxModal_SelectedIndexChanged);
             // 
             // excluirTurma
             // 
@@ -125,6 +128,7 @@ namespace estudio
             this.Controls.Add(this.groupBoxExcluir);
             this.Name = "excluirTurma";
             this.Text = "excluirTurma";
+            this.Load += new System.EventHandler(this.excluirTurma_Load);
             this.groupBoxExcluir.ResumeLayout(false);
             this.groupBoxExcluir.PerformLayout();
             this.ResumeLayout(false);

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,100 @@ namespace estudio
         public excluirTurma()
         {
             InitializeComponent();
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            int m = 0;
+            Modalidade mod = new Modalidade(comboBoxModal.Text);
+            MySqlDataReader r = mod.consultarModalidade();
+            if (r.Read())
+            {
+                m = Convert.ToInt32(r["idModalidade"]);
+            }
+            DAO_Conexao.con.Close();
+
+            String dia = comboBoxDias.Text;
+            String hora = comboBoxHora.Text;
+            Turma tur = new Turma(m,dia,hora);
+            if (tur.excluirTurma())
+            {
+                MessageBox.Show("Sucesso");
+            }
+            else
+            {
+                MessageBox.Show("Erro");
+            }
+            comboBoxModal.Items.Clear();
+            comboBoxDias.Items.Clear();
+            comboBoxHora.Items.Clear();
+
+            comboBoxModal.Refresh();
+            comboBoxDias.Refresh();
+            comboBoxHora.Refresh();
+
+            Modalidade mod1 = new Modalidade();
+            MySqlDataReader resultado = mod1.consultarTodasModalidades();
+            while (resultado.Read())
+            {
+                comboBoxModal.Items.Add(resultado["descricao"].ToString());
+            }
+            DAO_Conexao.con.Close();
+        }
+
+        private void excluirTurma_Load(object sender, EventArgs e)
+        {
+            Modalidade mod = new Modalidade();
+            MySqlDataReader r = mod.consultarTodasModalidades();
+            while (r.Read())
+            {
+                comboBoxModal.Items.Add(r["descricao"].ToString());
+            }
+            DAO_Conexao.con.Close();
+        }
+
+        private void comboBoxModal_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            comboBoxDias.Items.Clear();
+            int mod = 0;
+            Modalidade modali = new Modalidade(comboBoxModal.Text);
+            MySqlDataReader resultado = modali.consultarModalidade();
+            if (resultado.Read())
+            {
+                mod = Convert.ToInt32(resultado["idModalidade"]);
+            }
+            DAO_Conexao.con.Close();
+            Turma tur = new Turma(mod);
+            MySqlDataReader r = tur.consultaTurma();
+            if (r.Read())
+            {
+                comboBoxDias.Items.Add(r["diasemanaTurma"].ToString());
+            }
+            DAO_Conexao.con.Close();
+
+            comboBoxDias.Refresh();
+        }
+
+        private void comboBoxDias_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            comboBoxHora.Items.Clear();
+            String diaS = "";
+            int Modalida = 0;
+            Modalidade mod = new Modalidade(comboBoxModal.Text);
+            MySqlDataReader resultado = mod.consultarModalidade();
+            if (resultado.Read())
+            {
+                Modalida = Convert.ToInt32(resultado["idModalidade"]);
+            }
+            DAO_Conexao.con.Close();
+            diaS = comboBoxDias.Text;
+
+            Turma tur1 = new Turma(diaS, Modalida);
+            MySqlDataReader resul = tur1.consultaTurmaDia();
+            while (resul.Read())
+            {
+                comboBoxHora.Items.Add(resul["horaTurma"].ToString());
+            }
         }
     }
 }

@@ -54,16 +54,22 @@ namespace estudio
 
         private void cadastrarLoginToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form3 cad_login = new Form3();
-            cad_login.MdiParent = this;
-            cad_login.Show();
+            if (Application.OpenForms.OfType<Form3>().Count() == 0)
+            {
+                Form3 cad_login = new Form3();
+                cad_login.MdiParent = this;
+                cad_login.Show();
+            }
         }
 
         private void cadastrarAlunoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form2 cadAluno = new Form2();
-            cadAluno.MdiParent = this;
-            cadAluno.Show();
+            if (Application.OpenForms.OfType<Form2>().Count() == 0)
+            {
+                Form2 cadAluno = new Form2();
+                cadAluno.MdiParent = this;
+                cadAluno.Show();
+            }
         }
 
         private void txtSenha_TextChanged(object sender, EventArgs e)
@@ -83,30 +89,64 @@ namespace estudio
 
         private void cadastrarModalidadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            cadModalidade cad = new cadModalidade();
-            cad.MdiParent = this;
-            cad.Show();
+            if (Application.OpenForms.OfType<cadModalidade>().Count() == 0)
+            {
+                cadModalidade cad = new cadModalidade();
+                cad.MdiParent = this;
+                cad.Show();
+            }
+
         }
 
         private void excluirModalidadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            exclModalidade excl = new exclModalidade();
-            excl.MdiParent = this;
-            excl.Show();
+            if (Application.OpenForms.OfType<exclModalidade>().Count() == 0)
+            {
+                exclModalidade excl = new exclModalidade();
+                excl.MdiParent = this;
+                excl.Show();
+            }
         }
 
         private void consultarModadlidadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ConsultarModalidade consulta = new ConsultarModalidade();
-            consulta.MdiParent = this;
-            consulta.Show();
+            if (Application.OpenForms.OfType<ConsultarModalidade>().Count() == 0)
+            {
+                ConsultarModalidade consulta = new ConsultarModalidade();
+                consulta.MdiParent = this;
+                consulta.Show();
+            }
         }
 
         private void atualizarModalidadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AtualizarModalidade atualizar = new AtualizarModalidade();
-            atualizar.MdiParent = this; 
-            atualizar.Show();   
+            if (Application.OpenForms.OfType<AtualizarModalidade>().Count() == 0)
+            {
+                AtualizarModalidade atualizar = new AtualizarModalidade();
+                atualizar.MdiParent = this;
+                atualizar.Show();
+            }
+        }
+
+        private void cadastrarTurmaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<cadastrarTurmas>().Count() == 0)
+            {
+                cadastrarTurmas cadTur = new cadastrarTurmas();
+                cadTur.MdiParent = this;
+                cadTur.Show();
+            }
+        }
+
+        private void excluirTurmaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<excluirTurma>().Count() == 0)
+            {
+                excluirTurma exc = new excluirTurma();
+                exc.MdiParent= this;
+                exc.Show();
+            }
+
         }
     }
 }

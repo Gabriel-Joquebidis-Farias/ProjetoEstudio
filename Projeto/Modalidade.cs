@@ -79,7 +79,7 @@ namespace estudio
             try
             {
                 DAO_Conexao.con.Open();
-                MySqlCommand insere = new MySqlCommand("SELECT * FROM Modalidade WHERE ativa = 0 ORDER BY descricao", DAO_Conexao.con);
+                MySqlCommand insere = new MySqlCommand("SELECT * FROM Modalidade WHERE ativo = 0 ORDER BY descricao", DAO_Conexao.con);
                 buscar = insere.ExecuteReader();
                 return buscar;
             }
@@ -126,7 +126,7 @@ namespace estudio
             }
             finally
             {
-                DAO_Conexao.con.Close();
+               // DAO_Conexao.con.Close();
             }
         }
     }

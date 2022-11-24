@@ -117,3 +117,28 @@ C:\Users\Gabri\OneDrive\Área de Trabalho\Nova pasta\ProjetoEstudio\Projeto\obj\
 C:\Users\Gabri\OneDrive\Área de Trabalho\Nova pasta\ProjetoEstudio\Projeto\obj\Debug\estudio.csproj.CopyComplete
 C:\Users\Gabri\OneDrive\Área de Trabalho\Nova pasta\ProjetoEstudio\Projeto\obj\Debug\estudio.exe
 C:\Users\Gabri\OneDrive\Área de Trabalho\Nova pasta\ProjetoEstudio\Projeto\obj\Debug\estudio.pdb
+C:\Users\Gabri\OneDrive\Área de Trabalho\Repositorio\ProjetoEstudio\Projeto\obj\Debug\estudio.csproj.AssemblyReference.cache
+C:\Users\Gabri\OneDrive\Área de Trabalho\Repositorio\ProjetoEstudio\Projeto\obj\Debug\estudio.csproj.SuggestedBindingRedirects.cache
+C:\Users\Gabri\OneDrive\Área de Trabalho\Repositorio\ProjetoEstudio\Projeto\obj\Debug\estudio.AtualizarModalidade.resources
+C:\Users\Gabri\OneDrive\Área de Trabalho\Repositorio\ProjetoEstudio\Projeto\obj\Debug\estudio.cadastrarTurmas.resources
+C:\Users\Gabri\OneDrive\Área de Trabalho\Repositorio\ProjetoEstudio\Projeto\obj\Debug\estudio.cadModalidade.resources
+C:\Users\Gabri\OneDrive\Área de Trabalho\Repositorio\ProjetoEstudio\Projeto\obj\Debug\estudio.ConsultarModalidade.resources
+C:\Users\Gabri\OneDrive\Área de Trabalho\Repositorio\ProjetoEstudio\Projeto\obj\Debug\estudio.exclModalidade.resources
+C:\Users\Gabri\OneDrive\Área de Trabalho\Repositorio\ProjetoEstudio\Projeto\obj\Debug\estudio.excluirTurma.resources
+C:\Users\Gabri\OneDrive\Área de Trabalho\Repositorio\ProjetoEstudio\Projeto\obj\Debug\estudio.estudio.resources
+C:\Users\Gabri\OneDrive\Área de Trabalho\Repositorio\ProjetoEstudio\Projeto\obj\Debug\estudio.Form2.resources
+C:\Users\Gabri\OneDrive\Área de Trabalho\Repositorio\ProjetoEstudio\Projeto\obj\Debug\estudio.Form3.resources
+C:\Users\Gabri\OneDrive\Área de Trabalho\Repositorio\ProjetoEstudio\Projeto\obj\Debug\estudio.Properties.Resources.resources
+C:\Users\Gabri\OneDrive\Área de Trabalho\Repositorio\ProjetoEstudio\Projeto\obj\Debug\estudio.csproj.GenerateResource.cache
+C:\Users\Gabri\OneDrive\Área de Trabalho\Repositorio\ProjetoEstudio\Projeto\obj\Debug\estudio.csproj.CoreCompileInputs.cache
+C:\Users\Gabri\OneDrive\Área de Trabalho\Repositorio\ProjetoEstudio\Projeto\obj\Debug\estudio.exe
+C:\Users\Gabri\OneDrive\Área de Trabalho\Repositorio\ProjetoEstudio\Projeto\obj\Debug\estudio.pdb
+C:\Users\Gabri\OneDrive\Área de Trabalho\Repositorio\ProjetoEstudio\Projeto\bin\Debug\estudio.exe.config
+C:\Users\Gabri\OneDrive\Área de Trabalho\Repositorio\ProjetoEstudio\Projeto\bin\Debug\estudio.exe
+C:\Users\Gabri\OneDrive\Área de Trabalho\Repositorio\ProjetoEstudio\Projeto\bin\Debug\estudio.pdb
+C:\Users\Gabri\OneDrive\Área de Trabalho\Repositorio\ProjetoEstudio\Projeto\bin\Debug\MySql.Data.dll
+C:\Users\Gabri\OneDrive\Área de Trabalho\Repositorio\ProjetoEstudio\Projeto\bin\Debug\Google.Protobuf.dll
+C:\Users\Gabri\OneDrive\Área de Trabalho\Repositorio\ProjetoEstudio\Projeto\bin\Debug\Renci.SshNet.dll
+C:\Users\Gabri\OneDrive\Área de Trabalho\Repositorio\ProjetoEstudio\Projeto\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Gabri\OneDrive\Área de Trabalho\Repositorio\ProjetoEstudio\Projeto\bin\Debug\MySql.Data.xml
+C:\Users\Gabri\OneDrive\Área de Trabalho\Repositorio\ProjetoEstudio\Projeto\obj\Debug\estudio.csproj.CopyComplete

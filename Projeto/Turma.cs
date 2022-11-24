@@ -18,13 +18,13 @@ namespace estudio
             public int Modalidade { get => modalidade; set => modalidade = value; }
             public string AlunosMatriculados { get => alunosMatriculados; set => alunosMatriculados = value; }
 
-            public Turma(int modalidade, string professor, string dia, string hora, string alunosMatriculados)
+            public Turma(int modalidade, string professor, string dia, string hora)
             {
                 this.professor = professor;
                 this.dia = dia;
                 this.hora = hora;
                 this.modalidade = modalidade;
-                this.alunosMatriculados = alunosMatriculados;
+               
             }
 
             public Turma(int modalidade)
@@ -51,7 +51,7 @@ namespace estudio
                 try
                 {
                     DAO_Conexao.con.Open();
-                    MySqlCommand cadastra = new MySqlCommand("INSERT INTO Estudio_Turma (idModalidade, professor, diasemanaTurma, hora, alunosMatriculados, ativo) VALUES ('" + modalidade + "','" + professor + "','" + dia + "','" + hora + "','" + alunosMatriculados + "','" + 0 + "')", DAO_Conexao.con);
+                    MySqlCommand cadastra = new MySqlCommand("INSERT INTO Estudio_Turma (idModalidade, professorTurma, diasemanaTurma, horaTurma) VALUES ('" + modalidade + "','" + professor + "','" + dia + "','" + hora +"')", DAO_Conexao.con);
                     cadastra.ExecuteNonQuery();
                     cad = true;
                 }
@@ -72,7 +72,7 @@ namespace estudio
                 try
                 {
                     DAO_Conexao.con.Open();
-                    MySqlCommand exclui = new MySqlCommand("UPDATE Estudio_Turma SET ativa=1 WHERE idModalidade =" + modalidade + " AND diasemanaTurma ='" + dia + "' AND horaTurma ='" + hora + "'", DAO_Conexao.con);
+                    MySqlCommand exclui = new MySqlCommand("Delete from Estudio_Turma WHERE idModalidade =" + modalidade + " AND diasemanaTurma ='" + dia + "' AND horaTurma ='" + hora + "'", DAO_Conexao.con);
                     exclui.ExecuteNonQuery();
                     exc = true;
                 }
@@ -115,7 +115,7 @@ namespace estudio
                 try
                 {
                     DAO_Conexao.con.Open();
-                    MySqlCommand buscar = new MySqlCommand("SELECT * FROM Estudio_Turma WHERE ativa=0 AND idModalidade = " + modalidade + "", DAO_Conexao.con);
+                    MySqlCommand buscar = new MySqlCommand("SELECT * FROM Estudio_Turma WHERE idModalidade = " + modalidade + "", DAO_Conexao.con);
                     MySqlDataReader resultado = buscar.ExecuteReader();
                     return resultado;
 
@@ -137,7 +137,7 @@ namespace estudio
                 try
                 {
                     DAO_Conexao.con.Open();
-                    MySqlCommand buscar = new MySqlCommand("SELECT * FROM Estudio_Turma WHERE ativa=0 AND idModalidade = " + modalidade + " AND  diasemanaTurma = '" + dia + "'", DAO_Conexao.con);
+                    MySqlCommand buscar = new MySqlCommand("SELECT * FROM Estudio_Turma WHERE idModalidade = " + modalidade + " AND  diasemanaTurma = '" + dia + "'", DAO_Conexao.con);
                     MySqlDataReader resultado = buscar.ExecuteReader();
                     return resultado;
 

@@ -56,12 +56,6 @@
     <Compile Include="AtualizarModalidade.Designer.cs">
       <DependentUpon>AtualizarModalidade.cs</DependentUpon>
     </Compile>
-    <Compile Include="AtualizarTurma.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AtualizarTurma.Designer.cs">
-      <DependentUpon>AtualizarTurma.cs</DependentUpon>
-    </Compile>
     <Compile Include="cadastrarTurmas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,9 +111,6 @@
     <Compile Include="Turma.cs" />
     <EmbeddedResource Include="AtualizarModalidade.resx">
       <DependentUpon>AtualizarModalidade.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AtualizarTurma.resx">
-      <DependentUpon>AtualizarTurma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="cadastrarTurmas.resx">
       <DependentUpon>cadastrarTurmas.cs</DependentUpon>
