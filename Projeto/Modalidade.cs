@@ -115,7 +115,7 @@ namespace estudio
             try
             {
                 DAO_Conexao.con.Open();
-                MySqlCommand busca = new MySqlCommand("SELECT * FROM Modalidade WHERE '" + Descricao + "'", DAO_Conexao.con);
+                MySqlCommand busca = new MySqlCommand("SELECT * FROM Modalidade WHERE ativo = 0 and descricao like '" + Descricao + "'", DAO_Conexao.con);
                 MySqlDataReader buscar = busca.ExecuteReader();
                 return buscar;
             }

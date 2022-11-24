@@ -16,6 +16,9 @@ namespace estudio
         public ConsultarModalidade()
         {
             InitializeComponent();
+            txtAula.Enabled = false;
+            txtPreco.Enabled = false;
+            txtQntdAl.Enabled = false;
         
         }
 

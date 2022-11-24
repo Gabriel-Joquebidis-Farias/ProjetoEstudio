@@ -22,10 +22,10 @@ namespace estudio
         {
             int m = 0;
             Modalidade mod = new Modalidade(comboBoxModal.Text);
-            MySqlDataReader r = mod.consultarModalidade();
-            if (r.Read())
+            MySqlDataReader re= mod.consultarModalidade();
+            if (re.Read())
             {
-                m = Convert.ToInt32(r["idModalidade"]);
+                m = Convert.ToInt32(re["idModalidade"]);
             }
             DAO_Conexao.con.Close();
 
@@ -35,18 +35,19 @@ namespace estudio
             if (tur.excluirTurma())
             {
                 MessageBox.Show("Sucesso");
+                comboBoxModal.Items.Clear();
+                comboBoxDias.Items.Clear();
+                comboBoxHora.Items.Clear();
+
+                comboBoxModal.Refresh();
+                comboBoxDias.Refresh();
+                comboBoxHora.Refresh();
             }
             else
             {
                 MessageBox.Show("Erro");
             }
-            comboBoxModal.Items.Clear();
-            comboBoxDias.Items.Clear();
-            comboBoxHora.Items.Clear();
-
-            comboBoxModal.Refresh();
-            comboBoxDias.Refresh();
-            comboBoxHora.Refresh();
+            
 
             Modalidade mod1 = new Modalidade();
             MySqlDataReader resultado = mod1.consultarTodasModalidades();
@@ -71,7 +72,7 @@ namespace estudio
         private void comboBoxModal_SelectedIndexChanged(object sender, EventArgs e)
         {
             comboBoxDias.Items.Clear();
-            int mod = 0;
+            int mod=0;
             Modalidade modali = new Modalidade(comboBoxModal.Text);
             MySqlDataReader resultado = modali.consultarModalidade();
             if (resultado.Read())
@@ -93,7 +94,7 @@ namespace estudio
         private void comboBoxDias_SelectedIndexChanged(object sender, EventArgs e)
         {
             comboBoxHora.Items.Clear();
-            String diaS = "";
+            String diaS;
             int Modalida = 0;
             Modalidade mod = new Modalidade(comboBoxModal.Text);
             MySqlDataReader resultado = mod.consultarModalidade();
@@ -109,7 +110,7 @@ namespace estudio
             while (resul.Read())
             {
                 comboBoxHora.Items.Add(resul["horaTurma"].ToString());
-            }
+            }DAO_Conexao.con.Close();
         }
     }
 }

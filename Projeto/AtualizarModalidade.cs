@@ -13,14 +13,20 @@ namespace estudio
 {
     public partial class AtualizarModalidade : Form
     {
+        Modalidade modalidade = new Modalidade();
         public AtualizarModalidade()
         {
             InitializeComponent();
+            MySqlDataReader resultado = modalidade.consultarTodasModalidades();
+            while(resultado.Read()){
+                comboBox1.Items.Add(resultado["descricao"].ToString());
+            }
+            DAO_Conexao.con.Close();
         }
 
         private void btnAtualizar_Click(object sender, EventArgs e)
         {
-            Modalidade mod = new Modalidade(comboBox1.SelectedItem.ToString(), float.Parse(txtPreco.Text), Convert.ToInt32(txtAlunos.Text), Convert.ToInt32(txtAulas.Text));
+            Modalidade mod = new Modalidade(comboBox1.Text, float.Parse(txtPreco.Text), Convert.ToInt32(txtAlunos.Text), Convert.ToInt32(txtAulas.Text));
             if (mod.atualizar())
             {
                 MessageBox.Show("Modalidade atualizada");
@@ -30,20 +36,7 @@ namespace estudio
                 MessageBox.Show("Erro");
             }
         }
-        public void comboAtualiza()
-        {
-            DAO_Conexao.con.Open();
-            MySqlCommand insere = new MySqlCommand("Select descricao from Modalidade where Ativo=0", DAO_Conexao.con);
-            MySqlDataReader m = insere.ExecuteReader();
-            comboBox1.Items.Clear();
-            while (m.Read())
-            {
-                comboBox1.Items.Add(m.GetString("descricao"));
-                comboBox1.Text = m[0].ToString();
-            }
-            m.Close();
-            DAO_Conexao.con.Close();
-        }
+        
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
@@ -52,7 +45,7 @@ namespace estudio
 
         private void AtualizarModalidade_Load(object sender, EventArgs e)
         {
-            comboAtualiza();
+           
         }
 
         private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
@@ -61,10 +54,11 @@ namespace estudio
             MySqlDataReader resu = mod.consultarModalidade();
             while (resu.Read())
             {
-                txtAlunos.Text = resu["qtdAlunos"].ToString();
-                txtAulas.Text = resu["qtdAulas"].ToString();
+                txtAlunos.Text = resu["Alunos"].ToString();
+                txtAulas.Text = resu["Aula"].ToString();
                 txtPreco.Text = resu["preco"].ToString();
             }
+            DAO_Conexao.con.Close();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
